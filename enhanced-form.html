@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+      padding: 20px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #555;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Enhanced Contact & Info Form</h1>
+  <p>This page demonstrates a well-structured HTML document with semantic tags, lists, tables, media, and an accessible form.</p>
+</header>
+
+<section>
+  <h2>Information Overview</h2>
+  <h3>Key Features (List)</h3>
+  <ul>
+    <li>Fully accessible form</li>
+    <li>HTML5 validation</li>
+    <li>Multiple input types</li>
+    <li>Proper use of semantic elements</li>
+  </ul>
+
+  <h3>Sample Data Table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Validation</td>
+        <td>Ensures correct input formatting</td>
+      </tr>
+      <tr>
+        <td>Accessibility</td>
+        <td>Labels and structure for screen readers</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Embedded Media</h3>
+  <figure>
+    <img src="https://via.placeholder.com/500x200" alt="Placeholder banner example" width="100%" />
+    <figcaption>Sample embedded image</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Complete HTML5 Form</h2>
+  <form action="#" method="POST" autocomplete="on">
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required />
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select your country --</option>
+      <option value="kenya">Kenya</option>
+      <option value="uganda">Uganda</option>
+      <option value="tanzania">Tanzania</option>
+    </select>
+
+    <label for="comments">Message or Comments</label>
+    <textarea id="comments" name="comments" rows="5" placeholder="Write your message here..." required></textarea>
+
+    <label for="readonlyInfo">Reference Code (Read Only)</label>
+    <input type="text" id="readonlyInfo" value="REF-2025-001" readonly />
+
+    <label>Preferred Contact Method</label>
+    <input type="radio" id="contact-email" name="contact_method" value="email" required />
+    <label for="contact-email">Email</label>
+
+    <input type="radio" id="contact-phone" name="contact_method" value="phone" />
+    <label for="contact-phone">Phone</label>
+
+    <label>Interested Services</label>
+    <input type="checkbox" id="service-web" name="services" value="web" />
+    <label for="service-web">Web Design</label>
+
+    <input type="checkbox" id="service-dev" name="services" value="dev" />
+    <label for="service-dev">Software Development</label>
+
+    <label for="file">Upload Supporting File</label>
+    <input type="file" id="file" name="file" />
+
+    <label for="rating">Rate our service (1–5)</label>
+    <input type="number" id="rating" name="rating" min="1" max="5" required />
+
+    <label for="color">Pick a Theme Color</label>
+    <input type="color" id="color" name="color" />
+
+    <br /><br />
+    <button type="submit">Submit Form</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Enhanced Form Page</p>
+</footer>
+
+</body>
+</html>
